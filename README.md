@@ -1,6 +1,6 @@
 # Syndicate Argmax Prediction System
 
-**A production-grade, modular prediction system based on the universal argmax equation, built with legacy computing principles for maximum backward compatibility and robustness.**
+**A modular prediction system based on the universal argmax equation, built with legacy computing principles for maximum backward compatibility and robustness.**
 
 ## 🎯 Overview
 
@@ -228,6 +228,6 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 
 ---
 
-**Built with ❤️ using legacy computing principles for maximum robustness and backward compatibility.**
+**❤️ Legacy**
 
-*No modern ML frameworks. Pure mathematics. Production-ready.*
+
