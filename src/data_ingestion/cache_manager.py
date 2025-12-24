@@ -3,7 +3,6 @@ Cache Manager
 Simple file-based cache for API responses with TTL support
 """
 
-import json
 import pickle
 from pathlib import Path
 from typing import Any, Optional

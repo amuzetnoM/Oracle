@@ -3,4 +3,7 @@ Technical Indicators Package
 Pure numpy implementations of technical analysis indicators
 """
 
-__all__ = ['MovingAverages', 'Momentum', 'Volatility', 'Volume']
+from .moving_averages import MovingAverages
+from .momentum import Momentum
+
+__all__ = ['MovingAverages', 'Momentum']

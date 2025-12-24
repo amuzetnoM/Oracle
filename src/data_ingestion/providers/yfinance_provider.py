@@ -4,7 +4,7 @@ Uses yfinance library to fetch market data from Yahoo Finance
 """
 
 from typing import Dict, List, Optional, Any
-from datetime import datetime, timedelta
+from datetime import datetime
 import yfinance as yf
 from src.data_ingestion.base_provider import BaseProvider
 from src.data_ingestion.cache_manager import CacheManager
@@ -47,7 +47,6 @@ class YFinanceProvider(BaseProvider):
             
             # Fetch ticker data
             ticker = yf.Ticker(symbol)
-            info = ticker.info
             
             # Get last price from intraday data
             hist = ticker.history(period='1d', interval='1m')

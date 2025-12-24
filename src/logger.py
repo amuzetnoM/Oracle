@@ -6,7 +6,6 @@ Centralized logging system for Syndicate
 import logging
 import logging.handlers
 from pathlib import Path
-from typing import Optional
 from src.config_loader import get_config
 
 

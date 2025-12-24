@@ -3,8 +3,6 @@ Test Configuration Loader
 """
 
 import pytest
-import os
-from pathlib import Path
 from src.config_loader import ConfigLoader, get_config, reload_config
 
 
