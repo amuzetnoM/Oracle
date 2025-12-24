@@ -1,0 +1,106 @@
+# System Configuration
+# Default configuration for Syndicate Argmax Prediction System
+
+system:
+  name: "Syndicate"
+  version: "1.0.0"
+  environment: "development"  # development, staging, production
+
+# Logging Configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "[%(asctime)s] %(levelname)s [%(name)s] %(message)s"
+  file: "logs/syndicate.log"
+  max_bytes: 10485760  # 10MB
+  backup_count: 5
+  console_output: true
+
+# Database Configuration
+database:
+  type: "sqlite"  # sqlite, postgresql
+  sqlite:
+    path: "data/syndicate.db"
+  postgresql:
+    host: "localhost"
+    port: 5432
+    database: "syndicate"
+    pool_size: 10
+    max_overflow: 20
+
+# Cache Configuration
+cache:
+  enabled: true
+  ttl: 300  # seconds
+  max_size: 1000  # maximum cached items
+  directory: "data/cache"
+
+# Module Configuration
+modules:
+  data_ingestion:
+    enabled: true
+    update_interval: 60  # seconds
+    retry_attempts: 3
+    retry_delay: 5  # seconds
+    
+  feature_engineering:
+    enabled: true
+    lookback_window: 100
+    indicators:
+      - "sma"
+      - "ema"
+      - "rsi"
+      - "macd"
+      - "bollinger_bands"
+      
+  prediction_core:
+    enabled: true
+    confidence_threshold: 0.6
+    candidate_space: ["up", "down", "flat"]
+    scoring_methods:
+      - "statistical"
+      - "bayesian"
+    ensemble_weights: [0.5, 0.5]
+    
+  risk_management:
+    enabled: true
+    max_position_size: 0.1
+    risk_free_rate: 0.02
+    var_confidence: 0.95
+    cvar_confidence: 0.95
+    
+  execution:
+    enabled: true
+    mode: "paper"  # paper, live
+    transaction_cost: 0.001  # 0.1%
+    
+  monitoring:
+    enabled: true
+    performance_window: 1000
+    drift_detection_window: 1000
+    alert_threshold: 0.1
+
+# Orchestrator Configuration
+orchestrator:
+  event_bus:
+    max_queue_size: 10000
+  scheduler:
+    timezone: "UTC"
+  health_check:
+    interval: 60  # seconds
+    timeout: 10  # seconds
+  circuit_breaker:
+    failure_threshold: 5
+    timeout: 60  # seconds
+    half_open_attempts: 3
+
+# Web UI Configuration
+web_ui:
+  host: "0.0.0.0"
+  port: 5000
+  debug: false
+  secret_key: "change-this-in-production"
+  cors_origins: ["*"]
+  websocket:
+    enabled: true
+    ping_interval: 25
+    ping_timeout: 60
