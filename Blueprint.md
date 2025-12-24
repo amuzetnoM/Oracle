@@ -1,6 +1,7 @@
-# Blueprint for a Gold Prediction System
+# Blueprint 
+> Prediction System
 
-This blueprint outlines a gold prediction system leveraging the universal argmax equation:
+This blueprint leverages the universal argmax equation:
 
 $\hat{x} = \arg\max_{x \in \mathcal{C}} S(x \mid c)$
 
