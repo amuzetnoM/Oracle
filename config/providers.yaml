@@ -1,0 +1,68 @@
+# Data Provider Configurations
+# API endpoints and settings for various data providers
+
+providers:
+  # FRED - Federal Reserve Economic Data
+  fred:
+    enabled: true
+    base_url: "https://api.stlouisfed.org/fred"
+    rate_limit: 120  # requests per minute
+    timeout: 30  # seconds
+    series:
+      - "DGS10"  # 10-Year Treasury Rate
+      - "DEXUSEU"  # USD/EUR Exchange Rate
+      - "GOLDAMGBD228NLBM"  # Gold Price
+    
+  # Yahoo Finance (yfinance)
+  yfinance:
+    enabled: true
+    rate_limit: 2000  # requests per hour
+    timeout: 30
+    default_interval: "1d"  # 1m, 2m, 5m, 15m, 30m, 60m, 90m, 1h, 1d, 5d, 1wk, 1mo, 3mo
+    
+  # Alpha Vantage
+  alphavantage:
+    enabled: true
+    base_url: "https://www.alphavantage.co/query"
+    rate_limit: 5  # requests per minute (free tier)
+    timeout: 30
+    
+  # Binance (Cryptocurrency)
+  binance:
+    enabled: true
+    base_url: "https://api.binance.com/api/v3"
+    rate_limit: 1200  # requests per minute
+    timeout: 30
+    symbols:
+      - "BTCUSDT"
+      - "ETHUSDT"
+      - "BNBUSDT"
+    
+  # CoinGecko (Cryptocurrency)
+  coingecko:
+    enabled: true
+    base_url: "https://api.coingecko.com/api/v3"
+    rate_limit: 50  # requests per minute (free tier)
+    timeout: 30
+    vs_currency: "usd"
+
+# Data Normalization Settings
+normalization:
+  timestamp_format: "iso8601"  # iso8601, unix
+  timezone: "UTC"
+  missing_value_strategy: "forward_fill"  # forward_fill, interpolate, drop
+  outlier_detection:
+    enabled: true
+    method: "iqr"  # iqr, zscore
+    threshold: 3.0
+
+# Data Validation Rules
+validation:
+  price:
+    min: 0
+    max: 1000000000  # 1 billion
+  volume:
+    min: 0
+  timestamp:
+    min_year: 2000
+    max_future_days: 1
