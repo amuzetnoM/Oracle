@@ -11,7 +11,6 @@ $$\hat{x} = \arg\max_{x \in \mathcal{C}} S(x \mid c)$$
 This system provides:
 - ✅ **Modular Architecture**: 8 independent yet integrated modules
 - ✅ **Legacy-First**: No modern ML frameworks - pure numpy/scipy
-- ✅ **Production-Ready**: Comprehensive testing, monitoring, and deployment
 - ✅ **Beautiful UI**: Real-time web dashboard
 - ✅ **Multiple Data Sources**: FRED, yfinance, Binance, CoinGecko, and more
 
