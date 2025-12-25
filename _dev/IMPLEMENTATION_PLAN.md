@@ -1,4 +1,4 @@
-# Syndicate Argmax Prediction System - Implementation Plan
+# Oracle Argmax Prediction System - Implementation Plan
 
 ## Project Overview
 Building a production-grade, modular argmax-based prediction system using legacy computing principles (avoiding modern AI/ML frameworks) for maximum backward compatibility and robustness.
@@ -207,7 +207,7 @@ Building a production-grade, modular argmax-based prediction system using legacy
    - `logger.py` - Centralized logging
 
 **Standalone Use**: Orchestrate any modular system
-**Integrated Use**: Central nervous system of Syndicate
+**Integrated Use**: Central nervous system of Oracle
 
 ---
 
@@ -232,14 +232,14 @@ Building a production-grade, modular argmax-based prediction system using legacy
    - `charts/risk_heatmap.py` - Risk visualization
 
 **Standalone Use**: Monitor any system with REST API
-**Integrated Use**: User interface for Syndicate
+**Integrated Use**: User interface for Oracle
 
 ---
 
 ## Directory Structure
 
 ```
-Syndicate/
+Oracle/
 ├── _dev/                          # Development documentation (moved from root)
 │   ├── thesis.md
 │   ├── architecture.md

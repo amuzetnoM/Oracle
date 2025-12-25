@@ -1,6 +1,6 @@
 """
 Logging Infrastructure
-Centralized logging system for Syndicate
+Centralized logging system for Oracle
 """
 
 import logging
@@ -9,7 +9,7 @@ from pathlib import Path
 from src.config_loader import get_config
 
 
-class SyndicateLogger:
+class OracleLogger:
     """
     Centralized logging system with file and console output.
     """
@@ -26,7 +26,7 @@ class SyndicateLogger:
         config = get_config()
         
         # Create logs directory
-        log_file = config.get('logging.file', 'logs/syndicate.log')
+        log_file = config.get('logging.file', 'logs/oracle.log')
         log_dir = Path(log_file).parent
         log_dir.mkdir(parents=True, exist_ok=True)
         
@@ -97,4 +97,4 @@ def get_logger(name: str) -> logging.Logger:
     Returns:
         Logger instance
     """
-    return SyndicateLogger.get_logger(name)
+    return OracleLogger.get_logger(name)

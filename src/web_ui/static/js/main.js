@@ -1,4 +1,4 @@
-// Main JavaScript for Syndicate Web UI
+// Main JavaScript for Oracle Web UI
 
 // Utility functions
 function formatNumber(num, decimals = 2) {
@@ -67,7 +67,7 @@ function stopAutoRefresh() {
 }
 
 // Export utilities
-window.SyndicateUtils = {
+window.OracleUtils = {
     formatNumber,
     formatTimestamp,
     showError,

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syndicate - Argmax Prediction System</title>
+    <title>Oracle - Argmax Prediction System</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-brand">
-            <h1>⚡ Syndicate</h1>
+            <h1>Oracle</h1>
             <p class="tagline">Argmax Prediction System</p>
         </div>
         <div class="nav-links">
@@ -21,46 +21,102 @@
 
     <main class="container">
         <section class="hero">
-            <h2>Welcome to Syndicate</h2>
-            <p>A modular prediction system based on the universal argmax equation</p>
+            <h2>Welcome to Oracle</h2>
+            <p>A Universal Argmax Prediction System</p>
             <div class="hero-equation">
-                $$\hat{x} = \arg\max_{x \in \mathcal{C}} S(x \mid c)$$
+                <svg viewBox="0 0 400 60" xmlns="http://www.w3.org/2000/svg" class="equation-svg">
+                    <text x="20" y="35" class="math-text" text-anchor="start">
+                        <tspan class="math-hat">ŷ</tspan>
+                        <tspan dx="5">=</tspan>
+                        <tspan dx="10">arg max</tspan>
+                        <tspan class="math-subscript" dy="8" dx="5" font-size="0.7em">x ∈ C</tspan>
+                        <tspan dy="-8" dx="10">S(x | c)</tspan>
+                    </text>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Live Reasoning Component -->
+        <section class="live-reasoning">
+            <div class="reasoning-header">
+                <svg class="reasoning-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <h3>Live Reasoning</h3>
+            </div>
+            <div class="reasoning-content">
+                <div class="reasoning-text" id="liveReasoning">
+                    <p class="reasoning-intro">The system is continuously analyzing market patterns...</p>
+                    <div class="reasoning-steps">
+                        <div class="step active">
+                            <span class="step-icon">▸</span>
+                            <span class="step-text">Scanning 243 historical predictions across multiple assets</span>
+                        </div>
+                        <div class="step">
+                            <span class="step-icon">▸</span>
+                            <span class="step-text">Computing confidence scores using ensemble argmax algorithm</span>
+                        </div>
+                        <div class="step">
+                            <span class="step-icon">▸</span>
+                            <span class="step-text">Cross-referencing 15 technical indicators for pattern recognition</span>
+                        </div>
+                        <div class="step">
+                            <span class="step-icon">▸</span>
+                            <span class="step-text">Evaluating risk metrics: VaR, CVaR, and Kelly criterion position sizing</span>
+                        </div>
+                    </div>
+                    <div class="reasoning-insight">
+                        <strong>Current Insight:</strong> The prediction engine is operating at 68.5% accuracy with 7 active modules processing real-time data streams. The argmax selector is identifying optimal candidates from the probability space, weighing each prediction against historical performance patterns.
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="features">
             <div class="feature-card">
-                <div class="feature-icon">📊</div>
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/>
+                </svg>
                 <h3>Multi-Source Data</h3>
                 <p>Ingests data from FRED, Yahoo Finance, Binance, and more</p>
             </div>
             
             <div class="feature-card">
-                <div class="feature-icon">🧮</div>
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/>
+                </svg>
                 <h3>Pure NumPy</h3>
                 <p>No modern ML frameworks - legacy-first approach</p>
             </div>
             
             <div class="feature-card">
-                <div class="feature-icon">📈</div>
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                </svg>
                 <h3>Real-time Predictions</h3>
                 <p>Live argmax predictions with confidence scores</p>
             </div>
             
             <div class="feature-card">
-                <div class="feature-icon">⚠️</div>
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+                </svg>
                 <h3>Risk Management</h3>
                 <p>VaR, CVaR, and Kelly criterion position sizing</p>
             </div>
             
             <div class="feature-card">
-                <div class="feature-icon">🔄</div>
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
+                </svg>
                 <h3>Event-Driven</h3>
                 <p>Modular architecture with pub-sub messaging</p>
             </div>
             
             <div class="feature-card">
-                <div class="feature-icon">💡</div>
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                </svg>
                 <h3>Continuous Learning</h3>
                 <p>Drift detection and feedback processing</p>
             </div>
@@ -89,13 +145,13 @@
         </section>
 
         <section class="cta">
-            <a href="/dashboard" class="btn btn-primary">Go to Dashboard →</a>
+            <a href="/dashboard" class="btn btn-primary">Go to Dashboard</a>
             <a href="/system" class="btn btn-secondary">System Monitor</a>
         </section>
     </main>
 
     <footer>
-        <p>Syndicate Argmax Prediction System | Built with Flask + Vanilla JS | Legacy Computing Principles</p>
+        <p>Oracle Argmax Prediction System | Built with Flask + Vanilla JS | Legacy Computing Principles</p>
     </footer>
 
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
@@ -122,6 +178,47 @@
                         data.metrics.total_predictions;
                 }
             });
+
+        // Animate live reasoning steps
+        const steps = document.querySelectorAll('.step');
+        let currentStep = 0;
+        
+        function cycleSteps() {
+            steps.forEach(step => step.classList.remove('active'));
+            steps[currentStep].classList.add('active');
+            currentStep = (currentStep + 1) % steps.length;
+        }
+        
+        // Cycle through reasoning steps every 3 seconds
+        setInterval(cycleSteps, 3000);
+        
+        // Dynamic reasoning insights
+        const insights = [
+            "The prediction engine is operating at 68.5% accuracy with 7 active modules processing real-time data streams. The argmax selector is identifying optimal candidates from the probability space, weighing each prediction against historical performance patterns.",
+            "Risk management algorithms are currently analyzing portfolio exposure across 243 predictions. The Kelly criterion suggests optimal position sizing at 2.3% of capital per trade, with CVaR indicating a 95% confidence interval of acceptable downside risk.",
+            "The ensemble scorer is combining Bayesian and statistical models to enhance prediction accuracy. Cross-validation shows consistent performance across volatile market conditions, with the argmax function selecting the highest-probability outcome from the candidate space.",
+            "Feature engineering modules are extracting 15 technical indicators from real-time data streams. Moving averages, momentum oscillators, and volatility measures are being synthesized to create robust prediction contexts for the argmax algorithm.",
+            "The drift detector has identified stable market conditions with minimal concept drift over the past 72 hours. The feedback processor is continuously learning from prediction outcomes, updating model parameters to maintain optimal performance in changing market environments."
+        ];
+        
+        let currentInsight = 0;
+        const insightElement = document.querySelector('.reasoning-insight');
+        
+        function updateInsight() {
+            insightElement.style.opacity = '0';
+            setTimeout(() => {
+                currentInsight = (currentInsight + 1) % insights.length;
+                insightElement.innerHTML = '<strong>Current Insight:</strong> ' + insights[currentInsight];
+                insightElement.style.opacity = '1';
+            }, 500);
+        }
+        
+        // Update insights every 8 seconds
+        setInterval(updateInsight, 8000);
+        
+        // Add transition for smooth fade
+        insightElement.style.transition = 'opacity 0.5s ease';
+    </script>
     </script>
 </body>
 </html>

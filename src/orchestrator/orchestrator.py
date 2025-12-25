@@ -16,7 +16,7 @@ from .circuit_breaker import CircuitBreakerRegistry
 
 class Orchestrator:
     """
-    Main orchestrator for the Syndicate system.
+    Main orchestrator for the Oracle system.
     
     Coordinates all modules, manages event flow, and ensures system health.
     """

@@ -1,6 +1,6 @@
 # Bibliography and References
 
-A comprehensive collection of foundational works, research papers, and books that inform and support the Syndicate framework.
+A comprehensive collection of foundational works, research papers, and books that inform and support the Oracle framework.
 
 ---
 
@@ -309,8 +309,8 @@ This bibliography uses APA style with some modifications for clarity. For academ
 
 **Suggested Citation:**
 ```
-Shakil, A. A. (2024). Syndicate: A Universal Theory of Prediction. 
-GitHub repository: https://github.com/amuzetnoM/Syndicate
+Shakil, A. A. (2024). Oracle: A Universal Theory of Prediction. 
+GitHub repository: https://github.com/amuzetnoM/Oracle
 ```
 
 ---

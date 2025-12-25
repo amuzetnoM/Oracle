@@ -1,6 +1,6 @@
 // System Monitor JavaScript
 
-const { fetchAPI, formatNumber, startAutoRefresh } = window.SyndicateUtils;
+const { fetchAPI, formatNumber, startAutoRefresh } = window.OracleUtils;
 
 // Load system status
 async function loadSystemStatus() {

@@ -1,7 +1,7 @@
 .PHONY: help install test lint format clean run docs
 
 help:
-	@echo "Syndicate Argmax Prediction System - Make Commands"
+	@echo "Oracle Argmax Prediction System - Make Commands"
 	@echo ""
 	@echo "Available commands:"
 	@echo "  make install    - Install dependencies"

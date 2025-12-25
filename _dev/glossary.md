@@ -1,6 +1,6 @@
 # Glossary of Terms
 
-A comprehensive reference for technical terms, mathematical notation, and key concepts used throughout the Syndicate framework.
+A comprehensive reference for technical terms, mathematical notation, and key concepts used throughout the Oracle framework.
 
 ---
 

@@ -1,8 +1,8 @@
 # System Configuration
-# Default configuration for Syndicate Argmax Prediction System
+# Default configuration for Oracle Argmax Prediction System
 
 system:
-  name: "Syndicate"
+  name: "Oracle"
   version: "1.0.0"
   environment: "development"  # development, staging, production
 
@@ -10,7 +10,7 @@ system:
 logging:
   level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
   format: "[%(asctime)s] %(levelname)s [%(name)s] %(message)s"
-  file: "logs/syndicate.log"
+  file: "logs/oracle.log"
   max_bytes: 10485760  # 10MB
   backup_count: 5
   console_output: true
@@ -19,11 +19,11 @@ logging:
 database:
   type: "sqlite"  # sqlite, postgresql
   sqlite:
-    path: "data/syndicate.db"
+    path: "data/oracle.db"
   postgresql:
     host: "localhost"
     port: 5432
-    database: "syndicate"
+    database: "oracle"
     pool_size: 10
     max_overflow: 20
 

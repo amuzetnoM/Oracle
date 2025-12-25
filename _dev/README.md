@@ -1,4 +1,4 @@
-# Syndicate: A Universal Theory of Prediction
+# Oracle: A Universal Theory of Prediction
 
 **A rigorous mathematical and philosophical framework for understanding all predictive systems through the lens of a single equation.**
 

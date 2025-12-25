@@ -97,3 +97,7 @@ def run_app(host='0.0.0.0', port=5000, orchestrator=None):
     """
     app = create_app(orchestrator)
     app.socketio.run(app, host=host, port=port, debug=True)
+
+
+if __name__ == '__main__':
+    run_app()
