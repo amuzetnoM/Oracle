@@ -1,5 +1,5 @@
 """
-System/End-to-End tests for the complete Syndicate system.
+System/End-to-End tests for the complete Oracle system.
 
 Tests the orchestrator coordinating all modules.
 """

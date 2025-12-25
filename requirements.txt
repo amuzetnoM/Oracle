@@ -1,4 +1,4 @@
-# Syndicate Argmax Prediction System
+# Oracle Argmax Prediction System
 # Core Dependencies - Legacy Computing Approach
 
 # =============================================================================

@@ -1,10 +1,10 @@
-# Syndicate Argmax Prediction System
+# Oracle Argmax Prediction System
 
 **A modular prediction system based on the universal argmax equation, built with legacy computing principles for maximum backward compatibility and robustness.**
 
 ## 🎯 Overview
 
-Syndicate implements the argmax prediction principle:
+Oracle implements the argmax prediction principle:
 
 $$\hat{x} = \arg\max_{x \in \mathcal{C}} S(x \mid c)$$
 
@@ -18,7 +18,7 @@ This system provides:
 ## 📁 Project Structure
 
 ```
-Syndicate/
+Oracle/
 ├── _dev/                    # Theoretical documentation and research
 ├── src/                     # Source code (8 modular components)
 │   ├── data_ingestion/     # Multi-source data providers
@@ -48,8 +48,8 @@ Syndicate/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/amuzetnoM/Syndicate.git
-   cd Syndicate
+   git clone https://github.com/amuzetnoM/Oracle.git
+   cd Oracle
    ```
 
 2. **Create virtual environment**:

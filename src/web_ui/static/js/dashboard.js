@@ -1,6 +1,6 @@
 // Dashboard JavaScript
 
-const { fetchAPI, postAPI, formatNumber, formatTimestamp, startAutoRefresh } = window.SyndicateUtils;
+const { fetchAPI, postAPI, formatNumber, formatTimestamp, startAutoRefresh } = window.OracleUtils;
 
 // Make prediction
 document.getElementById('predictionForm')?.addEventListener('submit', async (e) => {

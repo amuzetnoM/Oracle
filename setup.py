@@ -1,5 +1,5 @@
 """
-Syndicate Argmax Prediction System
+Oracle Argmax Prediction System
 Setup Configuration
 """
 
@@ -18,14 +18,14 @@ if requirements_file.exists():
         requirements = [line.strip() for line in f if line.strip() and not line.startswith('#')]
 
 setup(
-    name="syndicate",
+    name="oracle",
     version="1.0.0",
-    author="Syndicate Team",
-    author_email="contact@syndicate-system.com",
+    author="Oracle Team",
+    author_email="contact@oracle-system.com",
     description="Production-grade argmax-based prediction system",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/amuzetnoM/Syndicate",
+    url="https://github.com/amuzetnoM/Oracle",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     classifiers=[
@@ -55,7 +55,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "syndicate=src.cli:main",
+            "oracle=src.cli:main",
         ],
     },
     include_package_data=True,

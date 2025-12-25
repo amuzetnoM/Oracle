@@ -19,7 +19,7 @@ class TestConfigLoader:
         """Test loading default configuration."""
         config = ConfigLoader()
         system_name = config.get('system.name')
-        assert system_name == 'Syndicate'
+        assert system_name == 'Oracle'
     
     def test_load_provider_config(self):
         """Test loading provider configuration."""
