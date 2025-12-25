@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Syndicate</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>⚡ Syndicate</h1>
+        </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/dashboard" class="active">Dashboard</a>
+            <a href="/system">System Monitor</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2>Prediction Dashboard</h2>
+        
+        <section class="dashboard-grid">
+            <div class="dashboard-card">
+                <h3>Make Prediction</h3>
+                <form id="predictionForm">
+                    <input type="text" id="assetInput" placeholder="Asset (e.g., AAPL)" required>
+                    <button type="submit" class="btn btn-primary">Predict</button>
+                </form>
+                <div id="predictionResult" class="result-box"></div>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Performance Metrics</h3>
+                <div class="metrics-list">
+                    <div class="metric-item">
+                        <span>Accuracy:</span>
+                        <span id="metricAccuracy">-</span>
+                    </div>
+                    <div class="metric-item">
+                        <span>Win Rate:</span>
+                        <span id="metricWinRate">-</span>
+                    </div>
+                    <div class="metric-item">
+                        <span>Profit Factor:</span>
+                        <span id="metricProfitFactor">-</span>
+                    </div>
+                    <div class="metric-item">
+                        <span>Predictions Today:</span>
+                        <span id="metricPredictions">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-card full-width">
+                <h3>Recent Predictions</h3>
+                <div id="recentPredictions" class="predictions-list">
+                    Loading...
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Data Sources Status</h3>
+                <div id="dataProviders" class="providers-list">
+                    Loading...
+                </div>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Model Information</h3>
+                <div class="info-list">
+                    <div class="info-item">
+                        <strong>Model Type:</strong> Ensemble Argmax
+                    </div>
+                    <div class="info-item">
+                        <strong>Features Used:</strong> 15
+                    </div>
+                    <div class="info-item">
+                        <strong>Last Training:</strong> 2 hours ago
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>
