@@ -11,7 +11,7 @@ import numpy as np
 prediction_api = Blueprint('prediction_api', __name__)
 
 
-@data_api.route('/predict', methods=['POST'])
+@prediction_api.route('/predict', methods=['POST'])
 def make_prediction():
     """Make a prediction for an asset."""
     data = request.get_json()
