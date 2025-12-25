@@ -10,8 +10,8 @@ Handles:
 
 from typing import Dict, Any, List, Optional, Tuple
 import numpy as np
-from ..scoring.base_scorer import BaseScorer
-from ..candidate_space import CandidateSpace
+from .scoring.base_scorer import BaseScorer
+from .candidate_space import CandidateSpace
 
 
 class ModelTrainer:
