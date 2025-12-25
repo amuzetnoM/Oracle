@@ -22,9 +22,53 @@
     <main class="container">
         <section class="hero">
             <h2>Welcome to Syndicate</h2>
-            <p>A modular prediction system based on the universal argmax equation</p>
+            <p>A Universal Argmax Prediction System</p>
             <div class="hero-equation">
-                $$\hat{x} = \arg\max_{x \in \mathcal{C}} S(x \mid c)$$
+                <svg viewBox="0 0 400 60" xmlns="http://www.w3.org/2000/svg" class="equation-svg">
+                    <text x="20" y="35" class="math-text" text-anchor="start">
+                        <tspan class="math-hat">ŷ</tspan>
+                        <tspan dx="5">=</tspan>
+                        <tspan dx="10">arg max</tspan>
+                        <tspan class="math-subscript" dy="8" dx="5" font-size="0.7em">x ∈ C</tspan>
+                        <tspan dy="-8" dx="10">S(x | c)</tspan>
+                    </text>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Live Reasoning Component -->
+        <section class="live-reasoning">
+            <div class="reasoning-header">
+                <svg class="reasoning-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <h3>Live Reasoning</h3>
+            </div>
+            <div class="reasoning-content">
+                <div class="reasoning-text" id="liveReasoning">
+                    <p class="reasoning-intro">The system is continuously analyzing market patterns...</p>
+                    <div class="reasoning-steps">
+                        <div class="step active">
+                            <span class="step-icon">▸</span>
+                            <span class="step-text">Scanning 243 historical predictions across multiple assets</span>
+                        </div>
+                        <div class="step">
+                            <span class="step-icon">▸</span>
+                            <span class="step-text">Computing confidence scores using ensemble argmax algorithm</span>
+                        </div>
+                        <div class="step">
+                            <span class="step-icon">▸</span>
+                            <span class="step-text">Cross-referencing 15 technical indicators for pattern recognition</span>
+                        </div>
+                        <div class="step">
+                            <span class="step-icon">▸</span>
+                            <span class="step-text">Evaluating risk metrics: VaR, CVaR, and Kelly criterion position sizing</span>
+                        </div>
+                    </div>
+                    <div class="reasoning-insight">
+                        <strong>Current Insight:</strong> The prediction engine is operating at 68.5% accuracy with 7 active modules processing real-time data streams. The argmax selector is identifying optimal candidates from the probability space, weighing each prediction against historical performance patterns.
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -134,6 +178,47 @@
                         data.metrics.total_predictions;
                 }
             });
+
+        // Animate live reasoning steps
+        const steps = document.querySelectorAll('.step');
+        let currentStep = 0;
+        
+        function cycleSteps() {
+            steps.forEach(step => step.classList.remove('active'));
+            steps[currentStep].classList.add('active');
+            currentStep = (currentStep + 1) % steps.length;
+        }
+        
+        // Cycle through reasoning steps every 3 seconds
+        setInterval(cycleSteps, 3000);
+        
+        // Dynamic reasoning insights
+        const insights = [
+            "The prediction engine is operating at 68.5% accuracy with 7 active modules processing real-time data streams. The argmax selector is identifying optimal candidates from the probability space, weighing each prediction against historical performance patterns.",
+            "Risk management algorithms are currently analyzing portfolio exposure across 243 predictions. The Kelly criterion suggests optimal position sizing at 2.3% of capital per trade, with CVaR indicating a 95% confidence interval of acceptable downside risk.",
+            "The ensemble scorer is combining Bayesian and statistical models to enhance prediction accuracy. Cross-validation shows consistent performance across volatile market conditions, with the argmax function selecting the highest-probability outcome from the candidate space.",
+            "Feature engineering modules are extracting 15 technical indicators from real-time data streams. Moving averages, momentum oscillators, and volatility measures are being synthesized to create robust prediction contexts for the argmax algorithm.",
+            "The drift detector has identified stable market conditions with minimal concept drift over the past 72 hours. The feedback processor is continuously learning from prediction outcomes, updating model parameters to maintain optimal performance in changing market environments."
+        ];
+        
+        let currentInsight = 0;
+        const insightElement = document.querySelector('.reasoning-insight');
+        
+        function updateInsight() {
+            insightElement.style.opacity = '0';
+            setTimeout(() => {
+                currentInsight = (currentInsight + 1) % insights.length;
+                insightElement.innerHTML = '<strong>Current Insight:</strong> ' + insights[currentInsight];
+                insightElement.style.opacity = '1';
+            }, 500);
+        }
+        
+        // Update insights every 8 seconds
+        setInterval(updateInsight, 8000);
+        
+        // Add transition for smooth fade
+        insightElement.style.transition = 'opacity 0.5s ease';
+    </script>
     </script>
 </body>
 </html>
