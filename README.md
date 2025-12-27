@@ -1,8 +1,10 @@
-# Oracle Argmax Prediction System
+# ORXL
+
+> Argmax Prediction System
 
 **A modular prediction system based on the universal argmax equation, built with legacy computing principles for maximum backward compatibility and robustness.**
 
-## 🎯 Overview
+### Overview
 
 Oracle implements the argmax prediction principle:
 
@@ -13,6 +15,8 @@ This system provides:
 - ✅ **Legacy-First**: No modern ML frameworks - pure numpy/scipy
 - ✅ **Beautiful UI**: Real-time web dashboard
 - ✅ **Multiple Data Sources**: FRED, yfinance, Binance, CoinGecko, and more
+
+---
 
 ## 📁 Project Structure
 
@@ -34,6 +38,7 @@ Oracle/
 ├── scripts/                 # Utility scripts
 └── data/                    # Data storage (gitignored)
 ```
+---
 
 ## 🚀 Quick Start
 
