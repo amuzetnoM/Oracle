@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORXL - Universal Argmax Prediction System</title>
+    <meta name="description" content="ORXL: A rigorous mathematical prediction system based on the universal argmax equation. Predict markets, weather, sensors, health, and anything in the universe.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <h1 class="logo">ORXL</h1>
+                <span class="tagline">Universal Prediction</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#domains">Domains</a>
+                <a href="guides/quick-start.html">Quick Start</a>
+                <a href="api/index.html">API</a>
+                <a href="https://github.com/amuzetnoM/orxl" class="github-btn" target="_blank">
+                    <svg viewBox="0 0 16 16" width="16" height="16">
+                        <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Predict <span class="gradient-text">Anything</span><br>
+                    in the Universe
+                </h1>
+                <p class="hero-description">
+                    A rigorous mathematical prediction system based on the universal argmax equation.
+                    From markets to weather, sensors to health—if it has sequential data, ORXL can predict it.
+                </p>
+                
+                <!-- Argmax Equation -->
+                <div class="equation-container">
+                    <div class="equation">
+                        <span class="math">ŷ = arg max<sub>x ∈ C</sub> S(x | c)</span>
+                    </div>
+                    <p class="equation-caption">The universal prediction equation</p>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="cta-buttons">
+                    <a href="guides/quick-start.html" class="btn btn-primary">
+                        Get Started
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="guides/universal-data-guide.html" class="btn btn-secondary">
+                        View Documentation
+                    </a>
+                    <a href="https://github.com/amuzetnoM/orxl" class="btn btn-outline" target="_blank">
+                        <svg width="16" height="16" viewBox="0 0 16 16">
+                            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                </div>
+
+                <!-- Stats -->
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-value">24/25</div>
+                        <div class="stat-label">Tests Passing</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">5+</div>
+                        <div class="stat-label">Prediction Domains</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">0</div>
+                        <div class="stat-label">Security Alerts</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">∞</div>
+                        <div class="stat-label">Possibilities</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animated Code Example -->
+            <div class="hero-code">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="code-title">prediction.py</div>
+                    </div>
+                    <div class="code-content">
+                        <pre><code><span class="keyword">from</span> <span class="module">src.data_ingestion.providers</span> <span class="keyword">import</span> <span class="class">UniversalFileProvider</span>
+
+<span class="comment"># Predict weather</span>
+<span class="variable">weather</span> = <span class="class">UniversalFileProvider</span>(<span class="string">'data/weather'</span>, 
+                                   schema_mode=<span class="string">'flexible'</span>)
+<span class="variable">forecast</span> = <span class="variable">weather</span>.<span class="method">fetch_current_price</span>(<span class="string">'NYC'</span>)
+
+<span class="comment"># Predict sensor failures</span>
+<span class="variable">sensors</span> = <span class="class">UniversalFileProvider</span>(<span class="string">'data/sensors'</span>,
+                                   schema_mode=<span class="string">'minimal'</span>)
+<span class="variable">reading</span> = <span class="variable">sensors</span>.<span class="method">fetch_current_price</span>(<span class="string">'factory_01'</span>)
+
+<span class="comment"># Predict health events</span>
+<span class="variable">health</span> = <span class="class">UniversalFileProvider</span>(<span class="string">'data/health'</span>)
+<span class="variable">vitals</span> = <span class="variable">health</span>.<span class="method">fetch_current_price</span>(<span class="string">'patient_123'</span>)</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why ORXL?</h2>
+            <p class="section-description">
+                Built on rigorous mathematical foundations with no ML frameworks—pure numpy/scipy
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Universal</h3>
+                    <p>One equation predicts everything: markets, weather, sensors, health, text, systems</p>
+                    <a href="guides/universal-data-guide.html" class="feature-link">Learn more →</a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔬</div>
+                    <h3>Rigorous</h3>
+                    <p>Based on Bayesian decision theory, PAC learning, and information theory</p>
+                    <a href="guides/mathematical-foundations.html" class="feature-link">See the math →</a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🧩</div>
+                    <h3>Modular</h3>
+                    <p>8 independent modules that work standalone or integrated</p>
+                    <a href="guides/architecture.html" class="feature-link">View architecture →</a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📁</div>
+                    <h3>File-Based</h3>
+                    <p>Load data from CSV, JSON, or Parquet—no API dependencies required</p>
+                    <a href="guides/file-mode-quickstart.html" class="feature-link">Quick start →</a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure</h3>
+                    <p>Zero security alerts, validated with CodeQL scanning</p>
+                    <a href="https://github.com/amuzetnoM/orxl/security" class="feature-link">Security →</a>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Beautiful UI</h3>
+                    <p>Real-time dashboard with live reasoning and system monitoring</p>
+                    <a href="guides/web-ui.html" class="feature-link">See UI →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prediction Domains -->
+    <section id="domains" class="domains">
+        <div class="container">
+            <h2 class="section-title">Prediction Domains</h2>
+            <p class="section-description">
+                The argmax equation works for any domain with sequential data
+            </p>
+
+            <div class="domains-grid">
+                <div class="domain-card">
+                    <div class="domain-icon">☁️</div>
+                    <h3>Weather</h3>
+                    <p>Temperature, humidity, pressure, precipitation forecasting</p>
+                    <div class="domain-tags">
+                        <span class="tag">Time Series</span>
+                        <span class="tag">Regression</span>
+                    </div>
+                    <a href="guides/universal-data-guide.html#weather" class="domain-link">
+                        View example →
+                    </a>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon">📡</div>
+                    <h3>Sensors</h3>
+                    <p>IoT monitoring, predictive maintenance, anomaly detection</p>
+                    <div class="domain-tags">
+                        <span class="tag">Anomaly Detection</span>
+                        <span class="tag">IoT</span>
+                    </div>
+                    <a href="guides/universal-data-guide.html#sensors" class="domain-link">
+                        View example →
+                    </a>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon">❤️</div>
+                    <h3>Health</h3>
+                    <p>Vital signs monitoring, patient tracking, health alerts</p>
+                    <div class="domain-tags">
+                        <span class="tag">Healthcare</span>
+                        <span class="tag">Monitoring</span>
+                    </div>
+                    <a href="guides/universal-data-guide.html#health" class="domain-link">
+                        View example →
+                    </a>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon">📝</div>
+                    <h3>Text Analytics</h3>
+                    <p>Sentiment prediction, engagement forecasting, trend detection</p>
+                    <div class="domain-tags">
+                        <span class="tag">NLP</span>
+                        <span class="tag">Social Media</span>
+                    </div>
+                    <a href="guides/universal-data-guide.html#text" class="domain-link">
+                        View example →
+                    </a>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon">🖥️</div>
+                    <h3>Systems</h3>
+                    <p>Performance prediction, capacity planning, resource forecasting</p>
+                    <div class="domain-tags">
+                        <span class="tag">DevOps</span>
+                        <span class="tag">Infrastructure</span>
+                    </div>
+                    <a href="guides/universal-data-guide.html#systems" class="domain-link">
+                        View example →
+                    </a>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon">📈</div>
+                    <h3>Markets</h3>
+                    <p>Price forecasting, volume prediction, risk management</p>
+                    <div class="domain-tags">
+                        <span class="tag">Finance</span>
+                        <span class="tag">Trading</span>
+                    </div>
+                    <a href="guides/data-input-handbook.html" class="domain-link">
+                        View example →
+                    </a>
+                </div>
+            </div>
+
+            <div class="custom-domain">
+                <h3>+ Your Custom Domain</h3>
+                <p>Any sequential data with timestamps can be predicted with ORXL</p>
+                <a href="guides/universal-data-guide.html#custom" class="btn btn-outline-sm">
+                    Learn how to add your domain →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Start -->
+    <section class="quick-start">
+        <div class="container">
+            <h2 class="section-title">Get Started in 60 Seconds</h2>
+            
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Install</h3>
+                    <div class="code-snippet">
+                        <code>pip install -r requirements.txt</code>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Add Data</h3>
+                    <div class="code-snippet">
+                        <code>cp templates/weather.csv data/</code>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Predict</h3>
+                    <div class="code-snippet">
+                        <code>python predict.py --data weather</code>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-start-cta">
+                <a href="guides/quick-start.html" class="btn btn-primary">
+                    View Full Quick Start Guide →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub CTA -->
+    <section class="github-cta">
+        <div class="container">
+            <div class="github-cta-content">
+                <svg class="github-logo" viewBox="0 0 16 16" width="48" height="48">
+                    <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                <div>
+                    <h2>Open Source & Community Driven</h2>
+                    <p>ORXL is MIT licensed. Contributions welcome!</p>
+                </div>
+                <a href="https://github.com/amuzetnoM/orxl" class="btn btn-primary" target="_blank">
+                    <svg width="16" height="16" viewBox="0 0 16 16">
+                        <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Star on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ORXL</h3>
+                    <p>Universal Argmax Prediction System</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/amuzetnoM/orxl" target="_blank" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 16 16">
+                                <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Documentation</h4>
+                    <ul>
+                        <li><a href="guides/quick-start.html">Quick Start</a></li>
+                        <li><a href="guides/universal-data-guide.html">Universal Data Guide</a></li>
+                        <li><a href="guides/data-input-handbook.html">Data Input Handbook</a></li>
+                        <li><a href="guides/file-mode-quickstart.html">File Mode Quick Start</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>API Reference</h4>
+                    <ul>
+                        <li><a href="api/providers.html">Data Providers</a></li>
+                        <li><a href="api/prediction.html">Prediction Core</a></li>
+                        <li><a href="api/features.html">Feature Engineering</a></li>
+                        <li><a href="api/risk.html">Risk Management</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Theory</h4>
+                    <ul>
+                        <li><a href="guides/mathematical-foundations.html">Mathematical Foundations</a></li>
+                        <li><a href="guides/argmax-equation.html">The Argmax Equation</a></li>
+                        <li><a href="guides/architecture.html">System Architecture</a></li>
+                        <li><a href="guides/limitations.html">Limitations & Theory</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 ORXL. MIT Licensed.</p>
+                <a href="https://github.com/amuzetnoM/orxl" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
