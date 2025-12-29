@@ -127,11 +127,16 @@ class FileDataProvider(BaseProvider):
             DataFrame with loaded data
         """
         try:
-            # Try to automatically parse dates
-            df = pd.read_csv(
-                file_path,
-                parse_dates=['timestamp'] if 'timestamp' in pd.read_csv(file_path, nrows=0).columns else False
-            )
+            # Try to automatically parse dates with common timestamp column names
+            df = pd.read_csv(file_path)
+            
+            # Check if any timestamp-like column exists and parse it
+            timestamp_cols = ['timestamp', 'date', 'datetime', 'time', 'ts']
+            for col in df.columns:
+                if col.lower() in timestamp_cols:
+                    df[col] = pd.to_datetime(df[col])
+                    break
+            
             return df
         except Exception as e:
             self.logger.error(f"Error loading CSV {file_path}: {e}")
@@ -229,7 +234,7 @@ class FileDataProvider(BaseProvider):
                 found = False
                 for alt in alternatives.get(col, []):
                     if alt in df.columns:
-                        df.rename(columns={alt: col}, inplace=True)
+                        df = df.rename(columns={alt: col})
                         found = True
                         break
                 
@@ -241,11 +246,11 @@ class FileDataProvider(BaseProvider):
             try:
                 # Try parsing as ISO string
                 df['timestamp'] = pd.to_datetime(df['timestamp'])
-            except:
+            except (ValueError, TypeError):
                 try:
                     # Try parsing as Unix timestamp
                     df['timestamp'] = pd.to_datetime(df['timestamp'], unit='s')
-                except Exception as e:
+                except (ValueError, TypeError) as e:
                     self.logger.error(f"Could not parse timestamp column: {e}")
                     raise
         

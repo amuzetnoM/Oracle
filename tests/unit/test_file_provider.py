@@ -267,10 +267,10 @@ class TestFileDataProvider:
         """Test symbol validation."""
         provider = FileDataProvider(temp_data_dir)
         
-        assert provider.validate_symbol('AAPL') == True
-        assert provider.validate_symbol('BTC-USD') == True
-        assert provider.validate_symbol('') == False
-        assert provider.validate_symbol(None) == False
+        assert provider.validate_symbol('AAPL')
+        assert provider.validate_symbol('BTC-USD')
+        assert not provider.validate_symbol('')
+        assert not provider.validate_symbol(None)
     
     def test_data_normalization(self, temp_data_dir):
         """Test data is properly normalized."""
