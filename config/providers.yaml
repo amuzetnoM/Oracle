@@ -2,6 +2,17 @@
 # API endpoints and settings for various data providers
 
 providers:
+  # File Provider - Load data from local files
+  file:
+    enabled: true
+    data_directory: "data/market_data"  # Directory containing data files
+    supported_formats:
+      - "csv"       # Comma-separated values
+      - "json"      # JSON array or line-delimited JSON
+      - "parquet"   # Compressed columnar format
+    scan_subdirectories: true
+    refresh_on_request: false  # Set to true to rescan directory on each request
+    
   # FRED - Federal Reserve Economic Data
   fred:
     enabled: true

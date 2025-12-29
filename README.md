@@ -15,6 +15,7 @@ This system provides:
 - ✅ **Legacy-First**: No modern ML frameworks - pure numpy/scipy
 - ✅ **Beautiful UI**: Real-time web dashboard
 - ✅ **Multiple Data Sources**: FRED, yfinance, Binance, CoinGecko, and more
+- ✅ **File-Based Mode**: Load data from local files for offline analysis - **NEW!**
 
 ---
 
@@ -88,6 +89,7 @@ Oracle/
 
 ## 📚 Documentation
 
+- **[Data Input Handbook](docs/data_input_handbook.md)**: Complete guide to data input methods - **NEW!**
 - **[Implementation Plan](_dev/IMPLEMENTATION_PLAN.md)**: Complete system architecture and build plan
 - **[Theoretical Foundation](_dev/thesis.md)**: Mathematical basis of the argmax equation
 - **[User Guide](docs/user_guide.md)**: Comprehensive usage documentation
@@ -121,6 +123,7 @@ pytest tests/system/        # End-to-end tests
 
 ### 1. Data Ingestion
 Fetches and normalizes data from multiple sources:
+- **File-based**: Load data from local files (CSV, JSON, Parquet) - **NEW!**
 - FRED (Federal Reserve Economic Data)
 - Yahoo Finance (yfinance)
 - Binance (cryptocurrency)
