@@ -52,6 +52,7 @@ logs/
 
 # Keep example templates
 !data/market_data/examples/
+!data/universal_data/examples/
 
 # Environment Variables
 .env

@@ -15,7 +15,8 @@ This system provides:
 - ✅ **Legacy-First**: No modern ML frameworks - pure numpy/scipy
 - ✅ **Beautiful UI**: Real-time web dashboard
 - ✅ **Multiple Data Sources**: FRED, yfinance, Binance, CoinGecko, and more
-- ✅ **File-Based Mode**: Load data from local files for offline analysis - **NEW!**
+- ✅ **Universal Data Support**: Weather, sensors, health, ANY sequential data - **NEW!**
+- ✅ **File-Based Mode**: Load data from local files for offline analysis
 
 ---
 
@@ -89,7 +90,8 @@ Oracle/
 
 ## 📚 Documentation
 
-- **[Data Input Handbook](docs/data_input_handbook.md)**: Complete guide to data input methods - **NEW!**
+- **[Universal Data Guide](docs/universal_data_guide.md)**: Predict weather, sensors, health, ANYTHING - **NEW!**
+- **[Data Input Handbook](docs/data_input_handbook.md)**: Complete guide to data input methods
 - **[Implementation Plan](_dev/IMPLEMENTATION_PLAN.md)**: Complete system architecture and build plan
 - **[Theoretical Foundation](_dev/thesis.md)**: Mathematical basis of the argmax equation
 - **[User Guide](docs/user_guide.md)**: Comprehensive usage documentation
@@ -123,7 +125,8 @@ pytest tests/system/        # End-to-end tests
 
 ### 1. Data Ingestion
 Fetches and normalizes data from multiple sources:
-- **File-based**: Load data from local files (CSV, JSON, Parquet) - **NEW!**
+- **Universal File Provider**: Load ANY data type (weather, sensors, health, etc.) - **NEW!**
+- **File-based**: Load market data from local files (CSV, JSON, Parquet)
 - FRED (Federal Reserve Economic Data)
 - Yahoo Finance (yfinance)
 - Binance (cryptocurrency)
