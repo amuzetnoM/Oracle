@@ -1,0 +1,43 @@
+# ORXL Documentation Site Configuration
+
+# Site settings
+title: ORXL - Universal Argmax Prediction System
+description: A rigorous mathematical prediction system that can predict anything in the universe
+baseurl: "/orxl" # For GitHub Pages: /repository-name
+url: "https://amuzetnom.github.io" # GitHub Pages URL
+repository: amuzetnoM/orxl
+
+# Build settings
+markdown: kramdown
+theme: null
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Collections
+collections:
+  guides:
+    output: true
+    permalink: /guides/:name/
+  api:
+    output: true
+    permalink: /api/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      
+# GitHub Pages specific
+plugins:
+  - jekyll-github-metadata
+  - jekyll-relative-links
+
+# Custom variables
+accent_color: "#ff6b35"
+github_repo: "https://github.com/amuzetnoM/orxl"

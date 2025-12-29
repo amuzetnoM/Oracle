@@ -3,4 +3,12 @@ Data Providers Package
 Individual provider implementations
 """
 
-__all__ = []
+from .file_provider import FileDataProvider
+from .universal_provider import UniversalFileProvider
+
+# Optional providers - only import if dependencies available
+try:
+    from .yfinance_provider import YFinanceProvider
+    __all__ = ['FileDataProvider', 'UniversalFileProvider', 'YFinanceProvider']
+except ImportError:
+    __all__ = ['FileDataProvider', 'UniversalFileProvider']

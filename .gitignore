@@ -50,6 +50,10 @@ logs/
 *.sqlite
 *.sqlite3
 
+# Keep example templates
+!data/market_data/examples/
+!data/universal_data/examples/
+
 # Environment Variables
 .env
 .env.local

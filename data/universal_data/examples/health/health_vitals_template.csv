@@ -1,0 +1,6 @@
+timestamp,heart_rate,blood_pressure_sys,blood_pressure_dia,temperature,oxygen_saturation,respiratory_rate
+2024-01-01T08:00:00Z,72,120,80,98.6,98,16
+2024-01-01T08:15:00Z,75,122,82,98.7,97,17
+2024-01-01T08:30:00Z,70,118,78,98.5,98,16
+2024-01-01T08:45:00Z,73,121,81,98.6,98,16
+2024-01-01T09:00:00Z,71,119,79,98.5,99,15

@@ -1,0 +1,6 @@
+timestamp,sentiment_score,engagement,shares,comments,word_count,topic
+2024-01-01T08:00:00Z,0.75,1250,45,23,280,product_launch
+2024-01-01T09:00:00Z,0.82,1580,67,34,310,product_launch
+2024-01-01T10:00:00Z,0.68,980,28,15,245,customer_service
+2024-01-01T11:00:00Z,0.71,1120,35,19,265,product_launch
+2024-01-01T12:00:00Z,0.79,1420,52,28,295,new_feature
