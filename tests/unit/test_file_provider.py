@@ -297,6 +297,14 @@ class TestFileDataProvider:
 class TestFileProviderIntegration:
     """Integration tests with real-world scenarios."""
     
+    @pytest.fixture
+    def temp_data_dir(self):
+        """Create a temporary directory for test data."""
+        temp_dir = tempfile.mkdtemp()
+        yield temp_dir
+        # Cleanup
+        shutil.rmtree(temp_dir)
+    
     def test_integration_with_validation(self, temp_data_dir):
         """Test file provider with data validation."""
         from src.data_ingestion import DataValidator
